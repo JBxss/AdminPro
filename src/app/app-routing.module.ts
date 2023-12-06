@@ -9,6 +9,7 @@ const routes: Routes = [
   // path: '/dashboard' PagesRoutingModule
   // path: '/login' AppRoutingModule
 
+  { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
   { path: '**', component: NopagefoundComponent },
 ];
 
