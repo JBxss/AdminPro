@@ -7,17 +7,19 @@ import { ChartData } from 'chart.js';
   styles: ``,
 })
 export class Grafica1Component {
-  // Doughnut
-  public doughnutChartLabels: string[] = [
-    'Download Sales',
-    'In-Store Sales',
-    'Mail-Order Sales',
+
+  public labels1: string[] = [
+    'Pan',
+    'Refresco',
+    'Tacos',
   ];
-  public doughnutChartData: ChartData<'doughnut'> = {
-    labels: this.doughnutChartLabels,
+
+  public data1: ChartData<'doughnut'> = {
+    labels: this.labels1,
     datasets: [
-      { data: [350, 450, 100],
-        backgroundColor: ['#6857E6', '#009FEE', '#F02059'] },
+      { data: [150, 550, 550],
+        backgroundColor: ['#6857E6', '#009FEE', '#F02059'],
+       },
     ],
   };
 
